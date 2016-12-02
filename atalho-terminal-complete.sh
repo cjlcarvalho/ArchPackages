@@ -1,5 +1,3 @@
-su
-
 echo '"\e[A": history-search-backward' >> /etc/inputrc
 echo '"\e[B": history-search-forward' >> /etc/inputrc
 echo '"\e[C": forward-char' >> /etc/inputrc
