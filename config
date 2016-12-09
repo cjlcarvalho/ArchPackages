@@ -20,19 +20,19 @@
   scaled_zoom = None
   resize_down = None
   prev_tab = None
-  split_vert = None
+  split_vert = <Primary><Shift>e
   broadcast_off = None
   insert_number = None
   insert_padded = None
   broadcast_group = None
-  close_term = None
+  close_term = <Primary><Shift>w
   new_terminator = <Primary><Shift>n
   hide_window = None
   reset = None
   rotate_cw = None
   resize_up = None
   next_tab = None
-  split_horiz = None
+  split_horiz = <Primary><Shift>o
   move_tab_right = None
   edit_window_title = None
   reset_clear = None
@@ -61,6 +61,7 @@
     [[[child1]]]
       parent = window0
       type = Terminal
+      profile = default
     [[[window0]]]
       parent = ""
       type = Window
