@@ -65,6 +65,7 @@
     [[[window0]]]
       parent = ""
       type = Window
+      size = 900, 600
   [[x2]]
     [[[child0]]]
       fullscreen = False
