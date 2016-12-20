@@ -38,14 +38,15 @@
   reset_clear = None
 [profiles]
   [[default]]
-    scrollbar_position = hidden
-    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    background_darkness = 0.93
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_darkness = 0.95
     background_type = transparent
     background_image = None
     cursor_color = "#00db06"
-    foreground_color = "#00ff00"
+    foreground_color = "#839496"
     show_titlebar = False
+    font = Monospace 11
+    background_color = "#002b36"
     scrollback_infinite = True
   [[TerminalBasic]]
     scrollbar_position = hidden
@@ -65,7 +66,7 @@
     [[[window0]]]
       parent = ""
       type = Window
-      size = 900, 600
+      size = 675, 360
   [[x2]]
     [[[child0]]]
       fullscreen = False
