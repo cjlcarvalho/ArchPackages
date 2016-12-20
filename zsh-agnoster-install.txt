@@ -15,14 +15,10 @@ mkdir -p .config/fontconfig/conf.d
 fc-cache -vf ~/.fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
-# Copie o conteúdo de agnoster.zsh-theme para o seu .zshrc
-https://gist.github.com/agnoster/3712874
-
 # Faça as alterações de tema e usuário em seu .zshrc
 vim ~/.zshrc
 ZSH_THEME="agnoster"
 DEFAULT_USER=caio
-fc-cache -f -v
 
 # Instale o solarized
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
@@ -34,7 +30,12 @@ mv dircolors.ansi-dark .solarized
 # Adicione a seguinte linha ao final de seu zshrc
 eval `dircolors ~/.solarized/dircolors.ansi-dark`
 
-# Copie o conteúdo acima para a pasta root, para que possa usar o zsh como root também
+# Habilitando autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# Adicione ao seu zshrc
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Copie o conteúdo para a pasta root, para que possa usar o zsh como root também
 su
 cp -r /home/caio/.zsh* /root/
 cp -r /home/caio/.solarized /root/
