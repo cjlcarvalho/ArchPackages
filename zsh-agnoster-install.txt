@@ -19,7 +19,6 @@ mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 vim ~/.zshrc
 ZSH_THEME="agnoster"
 DEFAULT_USER=caio
-fc-cache -f -v
 
 # Instale o solarized
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
