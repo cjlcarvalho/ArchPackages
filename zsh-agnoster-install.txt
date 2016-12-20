@@ -30,6 +30,11 @@ mv dircolors.ansi-dark .solarized
 # Adicione a seguinte linha ao final de seu zshrc
 eval `dircolors ~/.solarized/dircolors.ansi-dark`
 
+# Habilitando autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# Adicione ao seu zshrc
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Copie o conteúdo para a pasta root, para que possa usar o zsh como root também
 su
 cp -r /home/caio/.zsh* /root/
