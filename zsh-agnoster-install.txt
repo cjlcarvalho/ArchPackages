@@ -15,9 +15,6 @@ mkdir -p .config/fontconfig/conf.d
 fc-cache -vf ~/.fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
-# Copie o conteúdo de agnoster.zsh-theme para o seu .zshrc
-https://gist.github.com/agnoster/3712874
-
 # Faça as alterações de tema e usuário em seu .zshrc
 vim ~/.zshrc
 ZSH_THEME="agnoster"
