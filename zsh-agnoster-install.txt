@@ -30,7 +30,7 @@ mv dircolors.ansi-dark .solarized
 # Adicione a seguinte linha ao final de seu zshrc
 eval `dircolors ~/.solarized/dircolors.ansi-dark`
 
-# Copie o conteúdo acima para a pasta root, para que possa usar o zsh como root também
+# Copie o conteúdo para a pasta root, para que possa usar o zsh como root também
 su
 cp -r /home/caio/.zsh* /root/
 cp -r /home/caio/.solarized /root/
