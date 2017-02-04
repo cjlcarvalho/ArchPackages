@@ -42,6 +42,16 @@ set ruler
 
 map <space> /
 
+" Mapear ctrl+s como w!
+command -nargs=0 -bar Update if &modified 
+                           \|    if empty(bufname('%'))
+                           \|        browse confirm write
+                           \|    else
+                           \|        confirm write
+                           \|    endif
+                           \|endif
+nnoremap <silent> <C-S> :<C-u>Update<CR> 
+
 " PYTHON
 
 let python_highlight_all = 1

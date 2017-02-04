@@ -90,3 +90,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval `dircolors ~/.solarized/dircolors.ansi-dark`
+
+alias vim="stty stop '' -ixoff ; vim"
+ttyctl -f
