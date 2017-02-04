@@ -1,5 +1,4 @@
 # Original theme https://github.com/agnoster zsh theme
-# modified by lborg019
 
 ZSH_THEME_GIT_PROMPT_DIRTY='±'
 
