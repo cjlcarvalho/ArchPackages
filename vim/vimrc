@@ -8,7 +8,6 @@ set fileformats=unix,mac,dos
 syntax on
 
 filetype on                           " enable file type detection
-specific file types
 
 set background=dark
 
