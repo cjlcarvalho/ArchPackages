@@ -148,3 +148,22 @@ endfunction
 if exists('$TMUX') 
     set term=screen-256color 
 endif
+
+" C++
+set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/gl
+set tags+=~/.vim/tags/sdl
+set tags+=~/.vim/tags/qt4
+" Enhanced keyboard mappings
+" " in normal mode F2 will save the file
+nmap <F2> :w<CR>
+" " in insert mode F2 will exit insert, save, enters insert again
+imap <F2> <ESC>:w<CR>i
+" " switch between header/source with F4
+map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+" " build using makeprg with <F7>
+map <F7> :make<CR>
+" " build using makeprg with <S-F7>
+map <S-F7> :make clean all<CR>
+" goto definition with F12
+map <F12> <C-]>
