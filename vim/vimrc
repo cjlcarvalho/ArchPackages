@@ -4,11 +4,8 @@ set nocompatible                      " must be first line
 set encoding=utf-8
 scriptencoding utf-8
 set fileformats=unix,mac,dos
-
 syntax on
-
 filetype on                           " enable file type detection
-
 set background=dark
 
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal" || !s:settings.is_win
@@ -79,12 +76,12 @@ set ruler
 set backspace=indent,eol,start          " Backspace for dummies
 set linespace=0                         " No extra spaces between rows
 
-map <space> /
+nmap <space> /
 
 " Quit
-inoremap <C-Q>     <esc>:q<cr>
-nnoremap <C-Q>     :q<cr>
-vnoremap <C-Q>     <esc>
+imap <C-Q>     <esc>:q<cr>
+nmap <C-Q>     :q<cr>
+vnoremap <S-Q>     <esc>
 nnoremap <Leader>q :q<cr>
 nnoremap <Leader>Q :qa!<cr>
 
@@ -155,15 +152,19 @@ set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
 " Enhanced keyboard mappings
-" " in normal mode F2 will save the file
+" explore your file tree
+nmap <F1> :Explore<CR>
+imap <F1> <ESC>:Explore<CR>
+" in normal mode F2 will save the file
 nmap <F2> :w<CR>
-" " in insert mode F2 will exit insert, save, enters insert again
+" in insert mode F2 will exit insert, save, enters insert again
 imap <F2> <ESC>:w<CR>i
-" " switch between header/source with F4
-map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
-" " build using makeprg with <F7>
+" switch between header/source with F4
+nmap <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+imap <F4> <ESC>:w<CR><ESC>:e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+" build using makeprg with <F7>
 map <F7> :make<CR>
-" " build using makeprg with <S-F7>
+" build using makeprg with <S-F7>
 map <S-F7> :make clean all<CR>
 " goto definition with F12
 map <F12> <C-]>
