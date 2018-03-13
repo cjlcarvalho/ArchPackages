@@ -1,0 +1,8 @@
+# How to change last commit owner
+
+git rebase -i HEAD~3 // See the last three commits
+git config --local user.name Caio // Just in case that you used a public machine with user.name defined as global
+git config --local user.email cjlcarvalho@live.com
+git rebase -i 7dee4ee // Rebase to the commit that comes before the last one
+git commit --amend --author="Caio <cjlcarvalho@live.com>"
+git push --force
