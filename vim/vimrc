@@ -168,3 +168,5 @@ map <F7> :make<CR>
 map <S-F7> :make clean all<CR>
 " goto definition with F12
 map <F12> <C-]>
+imap <C-Z> <ESC>:earlier 1s<CR>
+nmap <C-Z> :earlier 1s<CR>
